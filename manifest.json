@@ -1,7 +1,4 @@
 {
-   "background": {
-      "page": "background.html"
-   },
    "browser_action": {
       "default_icon": "/images/icons/16.png",
       "default_popup": "popup.html",
@@ -17,5 +14,6 @@
    "name": "Qlik Sense New Empty App",
    "options_page": "options/index.html",
    "permissions": [ "storage", "<all_urls>" ],
-   "version": "0.0.1"
+   "version": "0.0.1",
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
